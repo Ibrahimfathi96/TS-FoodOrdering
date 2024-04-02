@@ -5,6 +5,7 @@ import products from "@assets/data/products";
 export default function MenuScreen() {
   return (
     <FlatList
+      showsVerticalScrollIndicator={false}
       data={products}
       numColumns={2}
       renderItem={({ item }) => <ProductListItem product={item} />}
